@@ -1,4 +1,3 @@
-# Exploring-AWS-Identity-and-Access-Management-IAM-
 # Project 6: Exploring AWS Identity and Access Management (IAM)
 
 ## Lab Overview  
