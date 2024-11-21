@@ -1,49 +1,86 @@
 # Exploring-AWS-Identity-and-Access-Management-IAM-
-Project 6: Exploring AWS Identity and Access Management (IAM)
-Lab Overview
-In this lab, you will explore AWS Identity and Access Management (IAM) by managing users, groups, and policies within AWS. The objective is to understand how permissions are assigned and managed through IAM, allowing users to perform specific tasks based on their roles.
-Learning Objectives
-By the end of this lab, students will be able to:
- Explore and understand pre-created IAM users and groups.
- Inspect IAM policies attached to groups and understand their structure.
- Add users to groups and verify the inherited permissions.
- Test the effects of policies on user permissions in AWS services.
- Use AWS CLI to manage IAM roles and policies.
-Requirements
- Tools: AWS Management Console, AWS CLI (Command Line Interface)
-Lab Environment Setup
-1. Access AWS Console: Ensure that you can access the AWS Management Console with the provided credentials.
-2. AWS CLI Installation: Make sure AWS CLI is installed on your system. If not, refer to the AWS CLI installation guide.
-Tasks to Complete
-Task 1: Explore Users and Groups
- Log in to the AWS Management Console and navigate to IAM.
- List and explore pre-created IAM users and groups.
- Inspect the details and permissions associated with each user.
-Task 2: Inspect IAM Policies
- Explore the policies attached to the user groups.
- Understand the JSON structure of IAM policies, including statements like Effect, Action, and Resource.
-Task 3: Add Users to Groups
- Use AWS CLI or Console to add specific users to groups according to their roles:
-o User-1 to S3-Support (Read-only access to S3).
-o User-2 to EC2-Support (Read-only access to EC2).
-o User-3 to EC2-Admin (View, Start, and Stop EC2 instances).
-Task 4: Test Permissions
- Sign in as each user in a private browser session using the IAM sign-in URL.
- Test access to AWS services according to group policies:
-o Check S3 access for user-1.
-o Check EC2 read-only access for user-2.
-o Verify EC2 admin capabilities for user-3.
-Lab Submission
- Verification: After completing each task, ensure to test permissions and document the results.
- Submit: Capture screenshots of your console showing each step's successful completion. Submit these screenshots along with a summary of what you learned.
- Commands: All the commands you have used in “.sh” file
-Important Notes
- Ensure you are working in the correct AWS region as specified at the beginning of the lab.
- Errors due to limited permissions in the lab environment should be noted but do not affect the overall completion of tasks.
-Additional Resources
- AWS IAM Documentation: Link
- AWS CLI User Guide: Link
-Grading Criteria
- Proper execution of each task.
- Accurate testing of permissions.
- Clear and concise documentation of the steps and learnings.
+# Project 6: Exploring AWS Identity and Access Management (IAM)
+
+## Lab Overview  
+This project involves exploring AWS Identity and Access Management (IAM) by managing users, groups, and policies within AWS. The objective is to understand how permissions are assigned and managed through IAM, enabling users to perform specific tasks based on their roles.
+
+---
+
+## Learning Objectives  
+By completing this lab, you will:  
+- Explore and understand pre-created IAM users and groups.  
+- Inspect IAM policies attached to groups and understand their structure.  
+- Add users to groups and verify the inherited permissions.  
+- Test the effects of policies on user permissions in AWS services.  
+- Use AWS CLI to manage IAM roles and policies.  
+
+---
+
+## Requirements  
+- **Tools**:  
+  - AWS Management Console  
+  - AWS CLI (Command Line Interface)  
+
+- **Lab Environment Setup**:  
+  1. Access the AWS Management Console with provided credentials.  
+  2. Ensure AWS CLI is installed on your system. Refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) if needed.  
+
+---
+
+## Tasks  
+
+### Task 1: Explore Users and Groups  
+1. Log in to the AWS Management Console and navigate to IAM.  
+2. List and explore pre-created IAM users and groups.  
+3. Inspect the details and permissions associated with each user.  
+
+### Task 2: Inspect IAM Policies  
+1. Explore the policies attached to the user groups.  
+2. Understand the JSON structure of IAM policies, focusing on:  
+   - **Effect**  
+   - **Action**  
+   - **Resource**  
+
+### Task 3: Add Users to Groups  
+1. Add specific users to groups using AWS CLI or Console:  
+   - **User-1**: Add to **S3-Support** (Read-only access to S3).  
+   - **User-2**: Add to **EC2-Support** (Read-only access to EC2).  
+   - **User-3**: Add to **EC2-Admin** (View, Start, and Stop EC2 instances).  
+
+### Task 4: Test Permissions  
+1. Sign in as each user in a private browser session using the IAM sign-in URL.  
+2. Test permissions based on group policies:  
+   - Check S3 access for **User-1**.  
+   - Verify EC2 read-only access for **User-2**.  
+   - Validate EC2 admin capabilities for **User-3**.  
+
+---
+
+## Lab Submission  
+
+### Verification  
+1. Test permissions and document the results for each task.  
+
+### Submission  
+1. Capture screenshots of successful task completion.  
+2. Provide a summary of your learnings.  
+3. Submit all commands used in a `.sh` file.  
+
+---
+
+## Important Notes  
+- Ensure you are working in the correct AWS region specified for the lab.  
+- Note any errors caused by limited permissions in the lab environment. These errors will not affect task completion.  
+
+---
+
+## Additional Resources  
+- [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)  
+- [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)  
+
+---
+
+## Grading Criteria  
+- Proper execution of all tasks.  
+- Accurate testing of permissions.  
+- Clear and concise documentation of steps and learnings.  
